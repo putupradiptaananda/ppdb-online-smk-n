@@ -16,10 +16,10 @@ CREATE TABLE siswa (
     swa_nisn			VARCHAR(10) UNIQUE NOT NULL,
     swa_nama_lengkap	VARCHAR(100) NOT NULL,
     swa_kelamin			ENUM('L','P') NOT NULL,
-    swa_tmpt_lahir		VARCHAR(50) NOT NULL,
-    swa_tgl_lahir		DATE NOT NULL,
-    swa_alamat			TEXT NOT NULL,
-    swa_asal_sekolah	VARCHAR(100) NOT NULL,
+    swa_tmpt_lahir		VARCHAR(50) ,
+    swa_tgl_lahir		DATE ,
+    swa_alamat			TEXT ,
+    swa_asal_sekolah	VARCHAR(100) ,
     swa_no_hp			VARCHAR(20) NOT NULL,
     
     FOREIGN KEY (usr_id) REFERENCES users(usr_id)
